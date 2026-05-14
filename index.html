@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — Brain Dash | Famzgames</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:       #07060f;
+  --surface:  #0f0d24;
+  --card:     #16133a;
+  --card2:    #1c1945;
+  --border:   rgba(120,80,255,0.16);
+  --purple:   #7c4dff;
+  --purplelt: #b388ff;
+  --teal:     #1de9b6;
+  --yellow:   #ffd600;
+  --orange:   #ff6d00;
+  --red:      #ff1744;
+  --green:    #00e676;
+  --blue:     #00b0ff;
+  --text:     #ede9ff;
+  --muted:    rgba(237,233,255,0.52);
+  --r:        16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  font-size:15.5px;
+  line-height:1.78;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 70% 45% at 15% 15%,rgba(124,77,255,.13) 0%,transparent 60%),
+    radial-gradient(ellipse 55% 38% at 85% 82%,rgba(29,233,182,.09) 0%,transparent 55%),
+    radial-gradient(ellipse 40% 55% at 55% 5%, rgba(255,109,0,.06) 0%,transparent 50%);
+  pointer-events:none;z-index:0;
+}
+
+/* ── HEADER ──────────────────────────────────────────────────────────────── */
+header{
+  position:relative;z-index:1;
+  text-align:center;
+  padding:68px 24px 52px;
+  border-bottom:1px solid var(--border);
+}
+.brand-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(124,77,255,.14);
+  border:1px solid rgba(124,77,255,.32);
+  border-radius:100px;
+  padding:6px 18px;
+  font-family:'Syne',sans-serif;font-size:11.5px;font-weight:700;
+  letter-spacing:.13em;text-transform:uppercase;
+  color:var(--purplelt);margin-bottom:26px;
+}
+.admob-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,109,0,.14);
+  border:1px solid rgba(255,109,0,.35);
+  border-radius:100px;
+  padding:5px 14px;
+  font-family:'Syne',sans-serif;font-size:11px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--orange);margin-left:8px;
+}
+header h1{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(34px,6vw,62px);
+  font-weight:800;line-height:1.07;
+  background:linear-gradient(130deg,#fff 0%,var(--purplelt) 45%,var(--teal) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  margin-bottom:14px;
+}
+header>p{color:var(--muted);font-size:15px;font-weight:300;max-width:520px;margin:0 auto 24px;}
+.meta-row{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:4px;}
+.meta-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:100px;padding:5px 14px;
+  font-size:12.5px;color:var(--muted);
+}
+.meta-pill strong{color:var(--text);font-weight:500;}
+
+/* ── ADMOB WARNING BANNER ────────────────────────────────────────────────── */
+.admob-banner{
+  position:relative;z-index:1;
+  margin:0;
+  background:linear-gradient(135deg,rgba(255,109,0,.18) 0%,rgba(255,23,68,.12) 100%);
+  border-top:1px solid rgba(255,109,0,.3);
+  border-bottom:1px solid rgba(255,109,0,.3);
+  padding:18px 24px;
+  text-align:center;
+}
+.admob-banner p{
+  color:rgba(255,200,150,.9);font-size:13.5px;
+  max-width:700px;margin:0 auto;
+}
+.admob-banner strong{color:#ffb74d;}
+
+/* ── LAYOUT ──────────────────────────────────────────────────────────────── */
+.wrapper{
+  position:relative;z-index:1;
+  max-width:840px;margin:0 auto;
+  padding:52px 24px 80px;
+}
+
+/* ── SUMMARY GRID ────────────────────────────────────────────────────────── */
+.summary-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:13px;margin-bottom:52px;
+}
+.sc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r);padding:18px 16px;
+  display:flex;flex-direction:column;gap:7px;
+  transition:border-color .22s,transform .22s;
+}
+.sc:hover{border-color:var(--purple);transform:translateY(-3px);}
+.sc .ico{font-size:26px;line-height:1;}
+.sc .lbl{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:var(--purplelt);text-transform:uppercase;letter-spacing:.08em;}
+.sc .val{font-size:13.5px;color:var(--muted);line-height:1.5;}
+.sc.g{border-left:3px solid var(--green);}
+.sc.o{border-left:3px solid var(--orange);}
+.sc.t{border-left:3px solid var(--teal);}
+.sc.y{border-left:3px solid var(--yellow);}
+
+/* ── SECTION ─────────────────────────────────────────────────────────────── */
+section{margin-bottom:44px;scroll-margin-top:20px;}
+.sh{display:flex;align-items:center;gap:13px;margin-bottom:18px;padding-bottom:13px;border-bottom:1px solid var(--border);}
+.si{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;}
+.si.pu{background:rgba(124,77,255,.18);}
+.si.te{background:rgba(29,233,182,.15);}
+.si.gr{background:rgba(0,230,118,.15);}
+.si.ye{background:rgba(255,214,0,.15);}
+.si.or{background:rgba(255,109,0,.18);}
+.si.bl{background:rgba(0,176,255,.15);}
+.si.re{background:rgba(255,23,68,.15);}
+.si.ad{background:rgba(255,109,0,.22);}
+.sn{font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;color:var(--purple);letter-spacing:.1em;text-transform:uppercase;}
+.sh h2{font-family:'Syne',sans-serif;font-size:19px;font-weight:700;color:#fff;}
+
+p{color:var(--muted);margin-bottom:13px;}
+p:last-child{margin-bottom:0;}
+strong{color:var(--text);}
+a{color:var(--teal);}
+
+/* ── HIGHLIGHT BOXES ─────────────────────────────────────────────────────── */
+.hl{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r);padding:18px 20px;margin:16px 0;
+}
+.hl.grn{border-color:rgba(0,230,118,.3); background:rgba(0,230,118,.05);}
+.hl.tel{border-color:rgba(29,233,182,.3);background:rgba(29,233,182,.05);}
+.hl.yel{border-color:rgba(255,214,0,.3); background:rgba(255,214,0,.05);}
+.hl.pur{border-color:rgba(124,77,255,.35);background:rgba(124,77,255,.07);}
+.hl.ora{border-color:rgba(255,109,0,.35); background:rgba(255,109,0,.07);}
+.hl.red{border-color:rgba(255,23,68,.3);  background:rgba(255,23,68,.06);}
+
+/* ── CHECK LIST ──────────────────────────────────────────────────────────── */
+.cl{list-style:none;display:flex;flex-direction:column;gap:9px;margin:13px 0;}
+.cl li{display:flex;align-items:flex-start;gap:11px;color:var(--muted);font-size:14.5px;line-height:1.6;}
+.blt{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;margin-top:2px;}
+.blt.y {background:rgba(0,230,118,.2); color:var(--green);}
+.blt.n {background:rgba(255,23,68,.2);  color:var(--red);}
+.blt.i {background:rgba(29,233,182,.2); color:var(--teal);}
+.blt.o {background:rgba(255,109,0,.2);  color:var(--orange);}
+.blt.w {background:rgba(255,214,0,.2);  color:var(--yellow);}
+
+/* ── TABLE ───────────────────────────────────────────────────────────────── */
+.tbl{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;}
+.tbl th{
+  font-family:'Syne',sans-serif;font-size:11.5px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em;
+  color:var(--purplelt);padding:9px 13px;text-align:left;
+  border-bottom:1px solid var(--border);
+}
+.tbl td{
+  padding:11px 13px;color:var(--muted);
+  border-bottom:1px solid rgba(124,77,255,.07);
+  vertical-align:top;line-height:1.55;
+}
+.tbl tr:last-child td{border-bottom:none;}
+.tbl tr:hover td{background:rgba(124,77,255,.04);}
+.bdg{display:inline-block;padding:2px 10px;border-radius:100px;font-size:11.5px;font-weight:500;}
+.bdg.no {background:rgba(0,230,118,.15); color:var(--green);}
+.bdg.yes{background:rgba(255,23,68,.15);  color:var(--red);}
+.bdg.na {background:rgba(232,228,255,.1); color:var(--muted);}
+.bdg.ad {background:rgba(255,109,0,.18);  color:var(--orange);}
+code{color:var(--teal);font-size:12.5px;background:rgba(29,233,182,.08);padding:2px 7px;border-radius:5px;}
+
+/* ── ADMOB SPECIAL SECTION ───────────────────────────────────────────────── */
+.admob-section{
+  background:linear-gradient(135deg,rgba(255,109,0,.1) 0%,rgba(124,77,255,.08) 100%);
+  border:1px solid rgba(255,109,0,.28);
+  border-radius:20px;
+  padding:28px 24px;
+  margin-bottom:44px;
+}
+.admob-section .sh{border-bottom-color:rgba(255,109,0,.2);}
+.admob-logo{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,109,0,.15);border:1px solid rgba(255,109,0,.3);
+  border-radius:10px;padding:8px 16px;margin-bottom:16px;
+}
+.admob-logo span{font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:var(--orange);}
+
+/* ── CONTACT BOX ─────────────────────────────────────────────────────────── */
+.contact-box{
+  background:linear-gradient(135deg,rgba(124,77,255,.15) 0%,rgba(29,233,182,.08) 100%);
+  border:1px solid rgba(124,77,255,.3);
+  border-radius:var(--r);padding:30px;text-align:center;margin-top:44px;
+}
+.contact-box .emo{font-size:38px;margin-bottom:10px;}
+.contact-box h3{font-family:'Syne',sans-serif;font-size:19px;font-weight:700;color:#fff;margin-bottom:7px;}
+.contact-box p{color:var(--muted);margin-bottom:18px;}
+.contact-box a.btn{
+  display:inline-block;background:var(--purple);color:#fff;
+  text-decoration:none;padding:11px 26px;border-radius:11px;
+  font-family:'Syne',sans-serif;font-weight:700;font-size:13.5px;
+  transition:background .2s,transform .2s;
+}
+.contact-box a.btn:hover{background:var(--purplelt);transform:translateY(-2px);}
+
+/* ── FOOTER ──────────────────────────────────────────────────────────────── */
+footer{
+  position:relative;z-index:1;text-align:center;
+  padding:28px 24px;border-top:1px solid var(--border);
+  color:var(--muted);font-size:12.5px;
+}
+footer strong{color:var(--purplelt);}
+
+@media(max-width:600px){
+  header{padding:44px 18px 32px;}
+  .wrapper{padding:32px 16px 56px;}
+  .summary-grid{grid-template-columns:1fr 1fr;}
+  .tbl{font-size:12.5px;}
+  .tbl th,.tbl td{padding:7px 9px;}
+  .admob-section{padding:20px 16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <span class="brand-badge">🧠 Famzgames · Brain Dash</span>
+    <span class="admob-badge">📢 AdMob Enabled</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>We are transparent about everything we collect, including data used for advertising through Google AdMob.</p>
+  <div class="meta-row">
+    <div class="meta-pill">📅 Effective: <strong>May 14, 2026</strong></div>
+    <div class="meta-pill">🔄 Last Updated: <strong>May 14, 2026</strong></div>
+    <div class="meta-pill">📦 Version: <strong>1.0.0</strong></div>
+    <div class="meta-pill">🌍 Platform: <strong>Android</strong></div>
+  </div>
+</header>
+
+<!-- ADMOB NOTICE BANNER -->
+<div class="admob-banner">
+  <p>⚠️ <strong>Advertising Notice:</strong> Brain Dash displays ads served by <strong>Google AdMob</strong>. AdMob may collect device and usage data to show personalized or non-personalized ads. Please read this policy carefully to understand how your data is used.</p>
+</div>
+
+<div class="wrapper">
+
+  <!-- QUICK SUMMARY -->
+  <div class="summary-grid">
+    <div class="sc t">
+      <div class="ico">📢</div>
+      <div class="lbl">Ads Shown</div>
+      <div class="val">Google AdMob serves ads in this app</div>
+    </div>
+    <div class="sc o">
+      <div class="ico">📊</div>
+      <div class="lbl">Ad Data Collected</div>
+      <div class="val">AdMob may collect device &amp; usage data</div>
+    </div>
+    <div class="sc g">
+      <div class="ico">🚫</div>
+      <div class="lbl">No Personal Info</div>
+      <div class="val">We collect zero personal data ourselves</div>
+    </div>
+    <div class="sc g">
+      <div class="ico">💾</div>
+      <div class="lbl">Game Data Local</div>
+      <div class="val">Progress stays on your device only</div>
+    </div>
+    <div class="sc y">
+      <div class="ico">👶</div>
+      <div class="lbl">Kids Ads Policy</div>
+      <div class="val">Non-personalized ads for child users</div>
+    </div>
+    <div class="sc g">
+      <div class="ico">⚙️</div>
+      <div class="lbl">Opt-Out Available</div>
+      <div class="val">You can opt out of personalized ads</div>
+    </div>
+  </div>
+
+  <!-- 1. OVERVIEW -->
+  <section id="overview">
+    <div class="sh">
+      <div class="si pu">📋</div>
+      <div><div class="sn">Section 01</div><h2>Overview</h2></div>
+    </div>
+    <p>This Privacy Policy describes how <strong>Famzgames</strong> ("we", "us", "our") handles information in the <strong>Brain Dash</strong> Android application ("the App") available on Google Play Store.</p>
+    <p>Brain Dash uses <strong>Google AdMob</strong> to display advertisements. As a result, certain data may be collected by Google to serve and optimize ads. This policy explains what data is collected, by whom, and how it is used.</p>
+    <p>By downloading or using Brain Dash, you agree to this Privacy Policy. If you do not agree, please uninstall the App.</p>
+    <div class="hl pur">
+      <strong>Developer vs. AdMob:</strong>
+      <p style="margin-top:8px;margin-bottom:0;">Famzgames itself collects <strong>no personal data</strong>. However, Google AdMob — as a third-party advertising service — may collect data independently as described in this policy. We are required to disclose this to you.</p>
+    </div>
+  </section>
+
+  <!-- 2. GOOGLE ADMOB — FEATURED SECTION -->
+  <div class="admob-section" id="admob">
+    <div class="sh">
+      <div class="si ad">📢</div>
+      <div><div class="sn">Section 02 — Important</div><h2>Google AdMob Advertising</h2></div>
+    </div>
+
+    <div class="admob-logo">
+      <span>📱 Google AdMob</span>
+    </div>
+
+    <p>Brain Dash uses <strong>Google AdMob</strong>, an advertising service provided by Google LLC, to display ads within the app. AdMob helps us keep the app free for everyone.</p>
+
+    <div class="hl ora">
+      <strong style="color:var(--orange);">📢 What AdMob Collects:</strong>
+      <p style="margin-top:8px;margin-bottom:0;">Google AdMob may automatically collect the following data when you use Brain Dash:</p>
+    </div>
+
+    <table class="tbl" style="margin-top:0;">
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Purpose</th>
+          <th>Collected By</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Advertising ID</strong></td>
+          <td>Identify your device for ad targeting &amp; frequency capping</td>
+          <td><span class="bdg ad">Google AdMob</span></td>
+        </tr>
+        <tr>
+          <td><strong>IP Address</strong></td>
+          <td>Approximate location for geo-targeted ads</td>
+          <td><span class="bdg ad">Google AdMob</span></td>
+        </tr>
+        <tr>
+          <td><strong>Device Information</strong></td>
+          <td>Device model, OS version, screen size for ad rendering</td>
+          <td><span class="bdg ad">Google AdMob</span></td>
+        </tr>
+        <tr>
+          <td><strong>App Usage Data</strong></td>
+          <td>How you interact with ads (views, clicks, dismissals)</td>
+          <td><span class="bdg ad">Google AdMob</span></td>
+        </tr>
+        <tr>
+          <td><strong>Diagnostic Data</strong></td>
+          <td>Ad load performance and crash data related to ads</td>
+          <td><span class="bdg ad">Google AdMob</span></td>
+        </tr>
+        <tr>
+          <td><strong>Cookies / Identifiers</strong></td>
+          <td>Cross-app tracking for personalized ad profiles</td>
+          <td><span class="bdg ad">Google AdMob</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>This data is collected by <strong>Google LLC</strong>, not by Famzgames. We do not receive, store, or have access to this data.</p>
+
+    <div class="hl yel">
+      <strong style="color:var(--yellow);">📖 Google's Privacy Policy:</strong>
+      <p style="margin-top:8px;margin-bottom:0;">
+        For full details on how Google uses data from AdMob, please read Google's Privacy Policy:<br/>
+        <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a><br/><br/>
+        Google AdMob Terms of Service:<br/>
+        <a href="https://developers.google.com/admob/terms" target="_blank">https://developers.google.com/admob/terms</a>
+      </p>
+    </div>
+
+    <!-- Ad Types -->
+    <div style="margin-top:20px;">
+      <p><strong>Types of Ads in Brain Dash:</strong></p>
+      <table class="tbl">
+        <thead>
+          <tr><th>Ad Format</th><th>When It Appears</th><th>Skippable?</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🖼️ <strong>Banner Ads</strong></td>
+            <td>Home screen &amp; Stats screen (bottom of screen)</td>
+            <td><span class="bdg na">Always visible</span></td>
+          </tr>
+          <tr>
+            <td>📱 <strong>Interstitial Ads</strong></td>
+            <td>Between game rounds (after results screen)</td>
+            <td><span class="bdg no">After 5 seconds</span></td>
+          </tr>
+          <tr>
+            <td>🎁 <strong>Rewarded Ads</strong></td>
+            <td>Optional — watch to earn bonus coins</td>
+            <td><span class="bdg no">Fully optional</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Personalized vs Non-Personalized -->
+    <div style="margin-top:20px;">
+      <p><strong>Personalized vs. Non-Personalized Ads:</strong></p>
+      <div class="hl tel">
+        <p style="margin-bottom:8px;">Brain Dash uses the <strong>Google User Messaging Platform (UMP)</strong> to request your consent for personalized advertising in regions where consent is required (EU, UK, EEA — under GDPR).</p>
+        <ul class="cl" style="margin:0;">
+          <li><div class="blt y">✓</div>If you <strong>accept</strong> personalized ads → AdMob uses your data to show relevant ads</li>
+          <li><div class="blt i">ℹ</div>If you <strong>decline</strong> → AdMob shows non-personalized ads (less targeted)</li>
+          <li><div class="blt w">!</div>In regions without consent dialogs → ads may be personalized by default under Google's policies</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. DATA WE COLLECT (Famzgames) -->
+  <section id="our-data">
+    <div class="sh">
+      <div class="si te">🗄️</div>
+      <div><div class="sn">Section 03</div><h2>Data Collected by Famzgames</h2></div>
+    </div>
+    <p>Separate from AdMob, <strong>Famzgames itself</strong> stores only this minimal game data <strong>locally on your device</strong> using Android DataStore. This data never leaves your device.</p>
+    <table class="tbl">
+      <thead>
+        <tr><th>Data</th><th>What It Is</th><th>Where Stored</th><th>Shared?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Game Progress</td><td>Score, coins, games played, high scores</td><td>Device only</td><td><span class="bdg no">Never</span></td></tr>
+        <tr><td>Selected Character</td><td>Your chosen character in the shop</td><td>Device only</td><td><span class="bdg no">Never</span></td></tr>
+        <tr><td>Sound Preference</td><td>Muted or unmuted setting</td><td>Device memory</td><td><span class="bdg no">Never</span></td></tr>
+        <tr><td>Unlocked Characters</td><td>Characters you have purchased</td><td>Device only</td><td><span class="bdg no">Never</span></td></tr>
+      </tbody>
+    </table>
+    <div class="hl grn">
+      <strong style="color:var(--green);">✅ No PII collected by us:</strong>
+      <p style="margin-top:8px;margin-bottom:0;">None of the above contains personally identifiable information. We never access, transmit, or sell this data.</p>
+    </div>
+  </section>
+
+  <!-- 4. WHAT WE DON'T COLLECT -->
+  <section id="no-collect">
+    <div class="sh">
+      <div class="si gr">🚫</div>
+      <div><div class="sn">Section 04</div><h2>What Famzgames Does NOT Collect</h2></div>
+    </div>
+    <p>Famzgames does <strong>not</strong> independently collect any of the following:</p>
+    <ul class="cl">
+      <li><div class="blt n">✕</div>Your name, email address, or any contact information</li>
+      <li><div class="blt n">✕</div>Phone number or device phone number</li>
+      <li><div class="blt n">✕</div>Precise GPS location</li>
+      <li><div class="blt n">✕</div>Camera or microphone access</li>
+      <li><div class="blt n">✕</div>Contacts, calendar, or files</li>
+      <li><div class="blt n">✕</div>Social media account information</li>
+      <li><div class="blt n">✕</div>Biometric data</li>
+      <li><div class="blt n">✕</div>Payment or financial information</li>
+      <li><div class="blt n">✕</div>Behavioral profiling or analytics (we use no analytics SDK)</li>
+    </ul>
+    <p style="margin-top:8px;"><em>Note: Google AdMob may independently collect some of the above — see Section 02 for details.</em></p>
+  </section>
+
+  <!-- 5. CHILDREN'S PRIVACY -->
+  <section id="children">
+    <div class="sh">
+      <div class="si ye">👶</div>
+      <div><div class="sn">Section 05</div><h2>Children's Privacy &amp; COPPA</h2></div>
+    </div>
+    <p>Brain Dash is designed for <strong>mixed ages including children</strong>. We take children's privacy seriously and comply with COPPA (Children's Online Privacy Protection Act) and Google Play's Families Policy.</p>
+
+    <div class="hl red">
+      <strong style="color:#ff8a80;">⚠️ Important — Ads &amp; Children:</strong>
+      <p style="margin-top:8px;margin-bottom:0;">
+        Because Brain Dash targets mixed ages (including under 13), we are required to configure AdMob to serve <strong>non-personalized, child-directed ads only</strong> for all users, or to implement age-gating. Brain Dash is configured to request <strong>non-personalized ads</strong> to comply with COPPA and Google Play Families Policy.
+      </p>
+    </div>
+
+    <div style="margin-top:16px;">
+      <p><strong>Our commitments for child safety:</strong></p>
+      <ul class="cl">
+        <li><div class="blt y">✓</div>AdMob is configured with child-directed treatment flags where applicable</li>
+        <li><div class="blt y">✓</div>No behavioral profiling of children for advertising</li>
+        <li><div class="blt y">✓</div>No ads containing violent, adult, or inappropriate content</li>
+        <li><div class="blt y">✓</div>No account creation required for children to play</li>
+        <li><div class="blt y">✓</div>No chat, messaging, or social features</li>
+        <li><div class="blt y">✓</div>No links to external websites within the game UI</li>
+        <li><div class="blt y">✓</div>Rewarded ads are optional and clearly labeled</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:14px;">Parents or guardians with concerns may contact us at the email below to request information or deletion of any data associated with a child's device.</p>
+  </section>
+
+  <!-- 6. CONSENT & UMP -->
+  <section id="consent">
+    <div class="sh">
+      <div class="si or">✅</div>
+      <div><div class="sn">Section 06</div><h2>Consent &amp; Ad Preferences (GDPR / UMP)</h2></div>
+    </div>
+    <p>For users in the <strong>European Union, United Kingdom, and European Economic Area</strong>, Brain Dash uses the <strong>Google User Messaging Platform (UMP)</strong> to obtain your consent before showing personalized ads, as required by GDPR.</p>
+
+    <table class="tbl">
+      <thead>
+        <tr><th>Your Region</th><th>Consent Dialog</th><th>Ad Type if You Decline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>🇪🇺 EU / EEA / UK</td><td><span class="bdg yes">Required (GDPR)</span></td><td>Non-personalized ads</td></tr>
+        <tr><td>🇺🇸 USA (California)</td><td><span class="bdg ad">Optional (CCPA)</span></td><td>Non-personalized if opted out</td></tr>
+        <tr><td>🌍 Other regions</td><td><span class="bdg na">No dialog</span></td><td>Ads per Google's defaults</td></tr>
+      </tbody>
+    </table>
+
+    <div class="hl tel">
+      <strong style="color:var(--teal);">How to change your ad preferences:</strong>
+      <ul class="cl" style="margin-top:10px;margin-bottom:0;">
+        <li><div class="blt i">ℹ</div><strong>Android Settings:</strong> Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization"</li>
+        <li><div class="blt i">ℹ</div><strong>Google Account:</strong> <a href="https://adssettings.google.com">adssettings.google.com</a> → manage your ad personalization</li>
+        <li><div class="blt i">ℹ</div><strong>Reset Advertising ID:</strong> Settings → Privacy → Ads → Reset advertising ID</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. THIRD-PARTY SERVICES -->
+  <section id="third-party">
+    <div class="sh">
+      <div class="si or">🔗</div>
+      <div><div class="sn">Section 07</div><h2>Third-Party Services</h2></div>
+    </div>
+    <p>Brain Dash integrates the following third-party services:</p>
+    <table class="tbl">
+      <thead>
+        <tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data Shared</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Google AdMob</strong></td>
+          <td>Google LLC</td>
+          <td>In-app advertising</td>
+          <td><span class="bdg ad">Ad &amp; Device Data</span></td>
+        </tr>
+        <tr>
+          <td><strong>Google UMP SDK</strong></td>
+          <td>Google LLC</td>
+          <td>Consent management (GDPR)</td>
+          <td><span class="bdg ad">Consent Status</span></td>
+        </tr>
+        <tr>
+          <td><strong>Google Play Services</strong></td>
+          <td>Google LLC</td>
+          <td>App distribution &amp; updates</td>
+          <td><span class="bdg na">Managed by OS</span></td>
+        </tr>
+        <tr>
+          <td>Analytics SDK</td>
+          <td>—</td>
+          <td>Not used</td>
+          <td><span class="bdg no">None</span></td>
+        </tr>
+        <tr>
+          <td>Crash Reporting</td>
+          <td>—</td>
+          <td>Not used</td>
+          <td><span class="bdg no">None</span></td>
+        </tr>
+        <tr>
+          <td>Social Login</td>
+          <td>—</td>
+          <td>Not used</td>
+          <td><span class="bdg no">None</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Each third-party service operates under its own privacy policy. We encourage you to review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for details on AdMob data practices.</p>
+  </section>
+
+  <!-- 8. PERMISSIONS -->
+  <section id="permissions">
+    <div class="sh">
+      <div class="si pu">🔐</div>
+      <div><div class="sn">Section 08</div><h2>App Permissions</h2></div>
+    </div>
+    <p>Brain Dash requests the following Android permissions:</p>
+    <table class="tbl">
+      <thead>
+        <tr><th>Permission</th><th>Required By</th><th>Purpose</th><th>Accesses PII?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>MODIFY_AUDIO_SETTINGS</code></td>
+          <td>Brain Dash</td>
+          <td>In-game sound effects</td>
+          <td><span class="bdg no">No</span></td>
+        </tr>
+        <tr>
+          <td><code>INTERNET</code></td>
+          <td>Google AdMob</td>
+          <td>Load and display advertisements</td>
+          <td><span class="bdg ad">AdMob only</span></td>
+        </tr>
+        <tr>
+          <td><code>ACCESS_NETWORK_STATE</code></td>
+          <td>Google AdMob</td>
+          <td>Check connectivity before loading ads</td>
+          <td><span class="bdg no">No PII</span></td>
+        </tr>
+        <tr>
+          <td><code>AD_ID</code></td>
+          <td>Google AdMob</td>
+          <td>Read advertising ID for ad targeting</td>
+          <td><span class="bdg ad">AdMob only</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="hl grn">
+      <strong style="color:var(--green);">✅ No sensitive permissions:</strong>
+      <p style="margin-top:8px;margin-bottom:0;">Brain Dash does NOT request camera, microphone, location, contacts, storage, phone, or any other sensitive Android permission.</p>
+    </div>
+  </section>
+
+  <!-- 9. DATA STORAGE -->
+  <section id="storage">
+    <div class="sh">
+      <div class="si bl">💾</div>
+      <div><div class="sn">Section 09</div><h2>Data Storage &amp; Retention</h2></div>
+    </div>
+    <p><strong>Game data (by Famzgames):</strong> Stored locally on your device via Android DataStore. Deleted when you uninstall the app or clear app data. Never transmitted anywhere.</p>
+    <p><strong>Ad data (by Google AdMob):</strong> Google retains ad-related data per their own data retention policies. Visit <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a> for details.</p>
+    <ul class="cl">
+      <li><div class="blt i">ℹ</div>Game progress is retained until you uninstall Brain Dash</li>
+      <li><div class="blt i">ℹ</div>Clearing app data in Android Settings deletes all local game progress</li>
+      <li><div class="blt i">ℹ</div>Game data is not backed up to any cloud service by Famzgames</li>
+    </ul>
+  </section>
+
+  <!-- 10. YOUR RIGHTS -->
+  <section id="rights">
+    <div class="sh">
+      <div class="si te">⚖️</div>
+      <div><div class="sn">Section 10</div><h2>Your Privacy Rights</h2></div>
+    </div>
+    <p>Depending on your location, you may have the following rights regarding your data:</p>
+    <table class="tbl">
+      <thead>
+        <tr><th>Right</th><th>How to Exercise</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Access game data</strong></td>
+          <td>View it directly in the Stats screen inside the app</td>
+        </tr>
+        <tr>
+          <td><strong>Delete game data</strong></td>
+          <td>Uninstall the app or go to Settings → Apps → Brain Dash → Clear Data</td>
+        </tr>
+        <tr>
+          <td><strong>Opt out of personalized ads</strong></td>
+          <td>Settings → Google → Ads → Opt out of Ads Personalization</td>
+        </tr>
+        <tr>
+          <td><strong>Reset Advertising ID</strong></td>
+          <td>Settings → Privacy → Ads → Reset advertising ID</td>
+        </tr>
+        <tr>
+          <td><strong>Delete Advertising ID</strong></td>
+          <td>Settings → Privacy → Ads → Delete advertising ID (Android 12+)</td>
+        </tr>
+        <tr>
+          <td><strong>GDPR consent withdrawal</strong></td>
+          <td>Contact us — we can reset your UMP consent status</td>
+        </tr>
+        <tr>
+          <td><strong>CCPA opt-out</strong></td>
+          <td>Contact us at the email below</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 11. SECURITY -->
+  <section id="security">
+    <div class="sh">
+      <div class="si gr">🛡️</div>
+      <div><div class="sn">Section 11</div><h2>Security</h2></div>
+    </div>
+    <p>Brain Dash's local game data is protected by Android's built-in app sandboxing — other apps cannot access it. Since we do not transmit personal data, the risk of a data breach from our side is effectively zero.</p>
+    <p>For ad-related data security, Google AdMob uses industry-standard encryption and security practices. See <a href="https://safety.google" target="_blank">safety.google</a> for details.</p>
+  </section>
+
+  <!-- 12. POLICY CHANGES -->
+  <section id="changes">
+    <div class="sh">
+      <div class="si or">🔄</div>
+      <div><div class="sn">Section 12</div><h2>Changes to This Policy</h2></div>
+    </div>
+    <p>We may update this Privacy Policy when we add new features, integrate new SDKs, or when laws change. When updated we will:</p>
+    <ul class="cl">
+      <li><div class="blt i">ℹ</div>Update the "Last Updated" date at the top of this page</li>
+      <li><div class="blt i">ℹ</div>Update the Play Store listing description if changes are material</li>
+      <li><div class="blt i">ℹ</div>Publish the new policy at this same URL</li>
+    </ul>
+    <p style="margin-top:12px;">Continued use of Brain Dash after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <!-- 13. CONTACT -->
+  <section id="contact">
+    <div class="sh">
+      <div class="si re">📬</div>
+      <div><div class="sn">Section 13</div><h2>Contact Us</h2></div>
+    </div>
+    <p>For any privacy-related questions, consent withdrawal requests, or data deletion requests:</p>
+    <table class="tbl">
+      <tbody>
+        <tr><td style="color:var(--text);font-weight:500;width:130px;">Developer</td><td>Famzgames</td></tr>
+        <tr><td style="color:var(--text);font-weight:500;">App Name</td><td>Brain Dash</td></tr>
+        <tr><td style="color:var(--text);font-weight:500;">Email</td><td><a href="mailto:famzgamesstudio@gmail.com">famzgamesstudio@gmail.com</a></td></tr>
+        <tr><td style="color:var(--text);font-weight:500;">Country</td><td>Pakistan</td></tr>
+        <tr><td style="color:var(--text);font-weight:500;">Response Time</td><td>Within 7 business days</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <div class="contact-box">
+    <div class="emo">💌</div>
+    <h3>Questions About Ads or Privacy?</h3>
+    <p>We personally read every message. Reach out anytime.</p>
+    <a href="mailto:famzgamesstudio@gmail.com" class="btn">📧 famzgamesstudio@gmail.com</a>
+  </div>
+
+</div><!-- /wrapper -->
+
+<footer>
+  <p>© 2026 <strong>Famzgames</strong> · Brain Dash · All rights reserved.</p>
+  <p style="margin-top:5px;">Privacy Policy · Last updated <strong>May 14, 2026</strong> · Includes Google AdMob disclosure</p>
+</footer>
+
+</body>
+</html>
